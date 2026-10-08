@@ -55,17 +55,7 @@ html, body, #app, .slidev-layout {
   padding: 1.1rem 1.5rem;
   border-radius: 0 .75rem .75rem 0;
 }
-.slidev-layout::after {
-  content: 'DEVOPS CHILE WORKSHOPS  /  TERRALITH LABS';
-  position: absolute;
-  bottom: 1.4rem;
-  left: 4.5rem;
-  font-size: .65rem;
-  font-weight: 700;
-  letter-spacing: .16em;
-  color: var(--tl-primary);
-  opacity: .75;
-}
+.slidev-layout::after { display: none; }
 
 
 /* Workshop visual components */
@@ -96,3 +86,37 @@ html, body, #app, .slidev-layout {
 .slidev-layout .compact { margin-top:.85rem; }
 .slidev-layout .compact .panel { padding:1rem; }
 .slidev-layout .compact code { font-size:.85rem; overflow-wrap:anywhere; }
+
+/* Projection-safe layout: preserve breathing room at 16:9 */
+.slidev-layout { padding: 2.2rem 3.3rem 2.8rem; overflow: hidden; }
+.slidev-layout h1 { font-size: 2.45rem; line-height: 1.13; letter-spacing: -.045em; margin-bottom: .95rem; max-width: 100%; }
+.slidev-layout h2 { font-size: 1.4rem; }
+.slidev-layout p, .slidev-layout li { font-size: 1.04rem; line-height: 1.45; }
+.slidev-layout .eyebrow { margin-bottom: .9rem; font-size: .67rem; }
+.slidev-layout .prompt-card { font-size: 1.18rem; padding: 1rem 1.4rem; margin: 1rem 0; }
+.slidev-layout .three-col { gap: .75rem; margin-top: 1rem; }
+.slidev-layout .two-col { gap: .85rem; margin-top: 1rem; }
+.slidev-layout .mini-panel { padding: .95rem; }
+.slidev-layout .mini-panel strong { font-size: 1.02rem; }
+.slidev-layout .mini-panel p { font-size: .91rem; line-height: 1.4; }
+.slidev-layout .panel { padding: 1.15rem; }
+.slidev-layout .takeaway { margin-top: 1rem; padding: .7rem 1rem; font-size: .94rem; }
+.slidev-layout .step-list { gap: .55rem; }
+.slidev-layout .step-list > div { font-size: .98rem; padding: .65rem .9rem; }
+.slidev-layout .mermaid { max-height: 250px; margin: .7rem auto; }
+.slidev-layout .mermaid svg { max-height: 250px; max-width: 100%; }
+.slidev-layout .slide-note { font-size: .68rem; margin-top: 1.4rem; }
+.slidev-layout .hero-flow { margin-top: 2rem; }
+.slidev-layout .hero-flow span { font-size: .98rem; padding: .7rem .95rem; }
+.slidev-layout .architecture { margin-top: 1.3rem; display:grid; gap: 1.2rem; }
+.slidev-layout .architecture-top { display:grid; grid-template-columns:1fr 30px 1.12fr 30px 1fr; align-items:center; gap:.45rem; }
+.slidev-layout .arch-node { background:var(--tl-card); border:1px solid var(--tl-border); border-radius:.8rem; padding:1.15rem .9rem; display:flex; flex-direction:column; align-items:center; text-align:center; gap:.35rem; min-width:0; }
+.slidev-layout .arch-node small { font-size:.62rem; letter-spacing:.09em; color:var(--tl-primary); font-weight:750; }
+.slidev-layout .arch-node strong { font-size:1.25rem; color:var(--tl-foreground); }
+.slidev-layout .arch-node span { font-size:.83rem; opacity:.75; }
+.slidev-layout .arch-main { border-color:var(--tl-ocean); background:oklch(18% .065 255); }
+.slidev-layout .arch-arrow { color:var(--tl-primary); font-size:1.8rem; text-align:center; }
+.slidev-layout .architecture-bottom { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.85rem; }
+.slidev-layout .arch-support { background:var(--tl-card); border-top:3px solid var(--tl-ocean); border-radius:.55rem; padding:.85rem; display:flex; flex-direction:column; gap:.3rem; text-align:center; }
+.slidev-layout .arch-support strong { font-size:1rem; }
+.slidev-layout .arch-support span { font-size:.83rem; opacity:.75; }
