@@ -118,16 +118,20 @@ layout: default
 
 # Un agente necesita <span class="accent">contexto y controles</span>
 
-```mermaid
-flowchart TD
-    U["Desarrollador"] --> A["Agente de IA"]
-    S["OpenSpec · requisitos"] --> A
-    A <--> M["MCP · herramientas"]
-    M <--> G["GitHub · repositorio"]
-    A --> C["Cambios de código"]
-    C --> T["pytest + GitHub Actions"]
-    T -->|Resultados| U
-```
+<div class="architecture">
+  <div class="architecture-top">
+    <div class="arch-node"><small>01 · INTENCIÓN</small><strong>Desarrollador</strong><span>Define el objetivo</span></div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-node arch-main"><small>02 · ORQUESTACIÓN</small><strong>Agente de IA</strong><span>Planifica y ejecuta</span></div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-node"><small>03 · RESULTADO</small><strong>Código</strong><span>Cambios propuestos</span></div>
+  </div>
+  <div class="architecture-bottom">
+    <div class="arch-support"><strong>OpenSpec</strong><span>Requisitos</span></div>
+    <div class="arch-support"><strong>MCP + GitHub</strong><span>Contexto y herramientas</span></div>
+    <div class="arch-support"><strong>pytest + CI</strong><span>Validación</span></div>
+  </div>
+</div>
 
 <div class="takeaway">La persona define el objetivo. Las fuentes informan. Las pruebas validan.</div>
 
