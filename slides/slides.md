@@ -251,7 +251,15 @@ layout: default
 
 # Clona. Experimenta. <span class="accent">Comparte.</span>
 
+<div class="resource-layout">
+<div class="resource-main">
 <div class="repo-link">github.com/gseriche/agentic-software-engineering</div>
+</div>
+<div class="qr-panel">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=12&data=https%3A%2F%2Fgithub.com%2Fgseriche%2Fagentic-software-engineering" alt="QR al repositorio del workshop" />
+<strong>Escanea y clona</strong>
+</div>
+</div>
 
 ```bash
 git clone https://github.com/gseriche/agentic-software-engineering.git
