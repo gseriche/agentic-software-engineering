@@ -91,7 +91,7 @@ Esto reduce la dependencia de copiar y pegar contexto manualmente. Pero MCP no c
 
 **Transición:** «Ahora comparemos dos maneras de resolver el mismo problema».
 
-## Slide 8 — Demo 1: solo prompt (3 min)
+## Slide 7 — Demo 1: solo prompt (3 min)
 
 **Preparación:** abrir una conversación nueva con el agente y evitar mostrarle la especificación.
 
@@ -112,7 +112,7 @@ Antes de responder, explica qué endpoints propones.
 
 **Transición:** «Repitamos el proceso, pero ahora con evidencia».
 
-## Slide 9 — Demo 2: Spec + MCP + tests (6 min)
+## Slide 8 — Demo 2: Spec + MCP + tests (6 min)
 
 **Preparación:** abrir la especificación y tener el repositorio disponible mediante el conector MCP autorizado.
 
@@ -145,7 +145,7 @@ uvicorn app:app --reload
 
 **Transición:** «¿Cómo evitamos que esta validación dependa de la memoria del desarrollador?».
 
-## Slide 10 — CI/CD: filtro de evidencia (2 min)
+## Slide 9 — CI/CD: filtro de evidencia (2 min)
 
 **Relato:**
 
@@ -157,7 +157,7 @@ En el repositorio tenemos un workflow con pruebas de la API y build de las diapo
 
 **Transición:** «Ahora vamos a llevar el enfoque a un requerimiento nuevo».
 
-## Slide 11 — Ejercicio: transferir un dominio (10–15 min)
+## Slide 10 — Ejercicio: transferir un dominio (10–15 min)
 
 **Relato:**
 
@@ -180,7 +180,13 @@ Después agrega el endpoint y tests, preservando la unicidad del dominio.
 
 **Transición:** «Cerremos con tres ideas que pueden aplicar mañana».
 
-## Slide 12 — Cierre y repositorio (2 min)
+## Slide 11 — Síntesis (2 min)
+
+**Relato:** «La especificación reduce ambigüedad, MCP permite consultar contexto y herramientas, y las pruebas aportan evidencia. Ninguna pieza funciona como garantía aislada: la calidad surge del proceso completo y de la revisión humana».
+
+**Acción:** recorrer las tres tarjetas y pedir a los asistentes que identifiquen cuál incorporarían primero a su equipo.
+
+## Slide 12 — Recursos y repositorio (2 min)
 
 **Relato:**
 
